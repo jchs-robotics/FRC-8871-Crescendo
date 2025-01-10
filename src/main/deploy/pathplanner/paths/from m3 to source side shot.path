@@ -1,0 +1,138 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 8.322148426850584,
+        "y": 7.534701896205309
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 7.141038828164151,
+        "y": 7.581478513975069
+      },
+      "isLocked": false,
+      "linkedName": "M3"
+    },
+    {
+      "anchor": {
+        "x": 4.990689323982947,
+        "y": 3.9437833616501625
+      },
+      "prevControl": {
+        "x": 5.470291823086311,
+        "y": 3.9640482559784744
+      },
+      "nextControl": {
+        "x": 4.1604043585697115,
+        "y": 3.908700898322842
+      },
+      "isLocked": false,
+      "linkedName": "CenterStage"
+    },
+    {
+      "anchor": {
+        "x": 4.048666786792263,
+        "y": 2.7832087573007067
+      },
+      "prevControl": {
+        "x": 4.545668350595961,
+        "y": 2.958621073937306
+      },
+      "nextControl": {
+        "x": 3.5516652229885657,
+        "y": 2.6077964406641074
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 0.6222795351573609,
+        "y": 4.420390379242297
+      },
+      "prevControl": {
+        "x": 1.6981417438618351,
+        "y": 3.613493722713942
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "source side speaker"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "zero",
+      "waypointRelativePos": 0.30000000000000004,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "stow"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "shoot",
+      "waypointRelativePos": 2.35,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "aimShoot"
+              }
+            },
+            {
+              "type": "sequential",
+              "data": {
+                "commands": [
+                  {
+                    "type": "wait",
+                    "data": {
+                      "waitTime": 0.75
+                    }
+                  },
+                  {
+                    "type": "named",
+                    "data": {
+                      "name": "index"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 5.212,
+    "maxAcceleration": 4.5,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -59.036243467926454,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": null,
+  "previewStartingState": {
+    "rotation": -178.99491399474584,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

@@ -1,0 +1,86 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 0.6525276261677698,
+        "y": 6.621404696665272
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.4309059212303017,
+        "y": 6.5487560557927695
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 2.385716629840341,
+        "y": 6.455350660385266
+      },
+      "prevControl": {
+        "x": 1.2163011855963477,
+        "y": 6.548903895924785
+      },
+      "nextControl": {
+        "x": 3.0891330258679797,
+        "y": 6.399077348703054
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 3.6726354110103934,
+        "y": 6.455350660385266
+      },
+      "prevControl": {
+        "x": 2.994374453348877,
+        "y": 6.443656505942826
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "knockstart"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "stow",
+      "waypointRelativePos": 1.25,
+      "command": {
+        "type": "deadline",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "stow"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 5.212,
+    "maxAcceleration": 4.5,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -178.26429541107169,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": null,
+  "previewStartingState": {
+    "rotation": -125.75388725443679,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

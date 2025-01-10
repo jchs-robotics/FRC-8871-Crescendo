@@ -1,0 +1,52 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 13.821444458631314,
+        "y": 2.055995525228976
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 13.982986964185018,
+        "y": 1.923824384321399
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 12.294133497032647,
+        "y": 2.9665078292589504
+      },
+      "prevControl": {
+        "x": 12.529104414201674,
+        "y": 2.599365771182348
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 5.21,
+    "maxAcceleration": 3.5,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": -57.61932229343068,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "Tele",
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}
